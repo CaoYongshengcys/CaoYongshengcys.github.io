@@ -5,39 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>曹永胜的个人简历</title>
     <style>
+        /* 全局样式 */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
-            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #004e92, #0077b6); /* 科技感渐变背景 */
+            color: #fff; /* 白色文字 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: auto;
         }
+
         .container {
             max-width: 800px;
-            margin: auto;
-            background: #fff;
+            background: rgba(255, 255, 255, 0.9); /* 半透明白色背景 */
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 16px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
         }
+
         h1, h2, h3 {
-            color: #333;
+            color: #004e92; /* 深蓝色标题 */
+            font-weight: bold;
         }
+
+        p, ul, table {
+            color: #333; /* 深灰色正文 */
+        }
+
         ul {
             list-style-type: disc;
             padding-left: 20px;
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 10px;
         }
+
         table, th, td {
             border: 1px solid #ddd;
             padding: 8px;
             text-align: left;
         }
+
         th {
             background-color: #f2f2f2;
+            color: #333;
+        }
+
+        /* 动态效果：背景模糊 */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://source.unsplash.com/random/1600x900/?technology') center/cover no-repeat;
+            filter: blur(10px);
+            z-index: -1;
         }
     </style>
 </head>
@@ -51,7 +84,6 @@
         <p>学历：博士研究生</p>
         <p>研究方向：低碳能源交通耦合网优化调度</p>
         <p>邮箱：yongshengcao@sjtu.edu.cn</p>
-
         <!-- 教育背景 -->
         <h2>教育背景</h2>
         <ul>
@@ -230,42 +262,42 @@
                 <!-- 专利 1 -->
                 <tr>
                     <td>一种电子数据取证监督机器人</td>
-                    <td>CN202210060829.5</td>
+                    <td>ZL202210060829.5</td>
                     <td>2024-06-25</td>
                 </tr>
 
                 <!-- 专利 2 -->
                 <tr>
                     <td>一种智能微电网</td>
-                    <td>201610231204.5</td>
+                    <td>ZL201610231204.5</td>
                     <td>2018-05-15</td>
                 </tr>
 
                 <!-- 专利 3 -->
                 <tr>
                     <td>一种视力监督提醒设备</td>
-                    <td>201510979551.1</td>
+                    <td>ZL201510979551.1</td>
                     <td>2018-02-23</td>
                 </tr>
 
                 <!-- 专利 4 -->
                 <tr>
                     <td>一种公交车自助式买票报站系统</td>
-                    <td>201511015999.8</td>
+                    <td>ZL201511015999.8</td>
                     <td>2018-05-15</td>
                 </tr>
 
                 <!-- 专利 5 -->
                 <tr>
                     <td>一种红外无人机自主电网巡检系统</td>
-                    <td>201611008322.6</td>
+                    <td>ZL201611008322.6</td>
                     <td>2019-06-21</td>
                 </tr>
 
                 <!-- 专利 6 -->
                 <tr>
                     <td>一种帮助残疾人处理排泄及呕吐的智能轮椅</td>
-                    <td>201910179625.1</td>
+                    <td>ZL201910179625.1</td>
                     <td>2021-06-11</td>
                 </tr>
 
@@ -279,7 +311,7 @@
                 <!-- 专利 8 -->
                 <tr>
                     <td>一种自动家猫喂养系统</td>
-                    <td>2019106528930</td>
+                    <td>ZL2019106528930</td>
                     <td>2022-01-11</td>
                 </tr>
 
@@ -300,35 +332,35 @@
                 <!-- 专利 11 -->
                 <tr>
                     <td>一种基于无人机的实际场景建模方法</td>
-                    <td>ZL 2019 1 0151636.9</td>
+                    <td>ZL201910151636.9</td>
                     <td>2023-06-27</td>
                 </tr>
 
                 <!-- 专利 12 -->
                 <tr>
                     <td>一种基于VANETs的停车场推荐方法</td>
-                    <td>201910380417.8</td>
-                    <td>已授权（CN110111600B）</td>
+                    <td>ZL201910380417.8</td>
+                    <td>已授权</td>
                 </tr>
 
                 <!-- 专利 13 -->
                 <tr>
                     <td>一种实时无人机监管系统</td>
-                    <td>201910716123.8</td>
-                    <td>已授权（CN110536233B）</td>
+                    <td>ZL201910716123.8</td>
+                    <td>已授权</td>
                 </tr>
 
                 <!-- 专利 14 -->
                 <tr>
                     <td>一种基于改进的玻尔兹曼机的自适应快速动态定位系统及方法</td>
-                    <td>202010390792.3</td>
-                    <td>已授权（CN111538059B）</td>
+                    <td>ZL202010390792.3</td>
+                    <td>已授权</td>
                 </tr>
 
                 <!-- 专利 15 -->
                 <tr>
                     <td>多辆电动汽车在微电网系统中的分布式实时能量分配方法</td>
-                    <td>201810127590.2</td>
+                    <td>ZL201810127590.2</td>
                     <td>已授权</td>
                 </tr>
             </tbody>
