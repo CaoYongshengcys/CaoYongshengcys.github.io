@@ -3,101 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>曹永胜 - 个人简历</title>
+    <title>曹永胜的个人简历</title>
     <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #34495e;
-        }
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background: #f8f9fa;
+            margin: 20px;
+            background-color: #f4f4f9;
         }
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: white;
-            padding: 30px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .header {
-            text-align: center;
-            border-bottom: 3px solid var(--primary-color);
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+        h1, h2, h3 {
+            color: #333;
         }
-        .section-title {
-            color: var(--primary-color);
-            border-left: 4px solid var(--primary-color);
-            padding-left: 10px;
-            margin: 25px 0;
-        }
-        .timeline-item {
-            margin: 20px 0;
+        ul {
+            list-style-type: disc;
             padding-left: 20px;
-            border-left: 2px solid #ddd;
         }
-        .publication-list li {
-            margin-bottom: 15px;
-            padding: 10px;
-            background: #f8f9fa;
-            border-radius: 4px;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
         }
-        @media (max-width: 768px) {
-            .container {
-                padding: 15px;
-            }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>曹永胜</h1>
-            <p>博士/特聘副研究员 | 中共党员</p>
-            <div class="contact-info">
-                <p>📧 yongshengcao@sjtu.edu.cn | 📱 18018593292</p>
-                <p>🏫 华东政法大学智能科学与信息法学系 | 🔬 低碳能源交通耦合网优化调度</p>
-            </div>
-        </div>
+        <!-- 个人信息 -->
+        <h1>曹永胜</h1>
+        <p><strong>中共党员</strong></p>
+        <p>毕业院校：东华大学信息科学与技术学院</p>
+        <p>就职院校：华东政法大学</p>
+        <p>学历：博士研究生</p>
+        <p>研究方向：低碳能源交通耦合网优化调度</p>
+        <p>联系电话：18018593292</p>
+        <p>出生年月：1991年3月</p>
+        <p>邮箱：yongshengcao@sjtu.edu.cn</p>
 
         <!-- 教育背景 -->
-        <h2 class="section-title">教育背景</h2>
-        <div class="timeline-item">
-            <h3>东华大学 - 控制科学与工程（博士）</h3>
-            <p>2017.3-2021.6 | 导师：李德敏教授</p>
-            <p>休斯顿大学联培博士（2019.9-2020.10）导师：韩竹教授（IEEE Fellow）</p>
-        </div>
-
-        <!-- 工作经历 -->
-        <h2 class="section-title">工作经历</h2>
-        <div class="timeline-item">
-            <h3>华东政法大学 - 讲师/司法鉴定人</h3>
-            <p>2021.8-2025.1 | 教授课程：数字电子技术基础、计算机组成原理</p>
-        </div>
-
-        <!-- 代表论文 -->
-        <h2 class="section-title">代表成果</h2>
-        <ul class="publication-list">
-            <li>【IEEE Trans Smart Grid】Optimal Energy Management for Multi-microgrid...（SCI一区，ESI高被引）</li>
-            <li>【IEEE IoT Journal】Joint Routing and Charging Optimization...（SCI一区）</li>
-            <li>【Sustainability】Smart Carbon Emission Scheduling...（SCI三区）</li>
+        <h2>教育背景</h2>
+        <ul>
+            <li>
+                <strong>东华大学</strong> - 控制科学与工程 - 博士 (2017.3-2021.6)<br>
+                导师：李德敏教授
+            </li>
+            <li>
+                <strong>休斯顿大学</strong> - 电子和计算机工程 - 联培博士 (2019.9-2020.10)<br>
+                导师：韩竹教授（IEEE Fellow）
+            </li>
+            <li>
+                <strong>东华大学</strong> - 信息与通信工程 - 硕士
+            </li>
+            <li>
+                <strong>东华大学</strong> - 电子信息工程 - 本科
+            </li>
         </ul>
 
-        <!-- 科研项目 -->
-        <h2 class="section-title">科研项目</h2>
-        <div class="timeline-item">
-            <h3>上海市启明星培育项目（主持）</h3>
-            <p>2022.4-2025.3 | 基于机器学习的智能网联电动汽车能量调度研究</p>
-        </div>
+        <!-- 工作经历 -->
+        <h2>工作经历</h2>
+        <ul>
+            <li>
+                <strong>上海电机学院</strong> - 电子信息工程 - 特聘副研究员 (2025.2-)
+            </li>
+            <li>
+                <strong>上海交通大学</strong> - 电子信息与电气工程学院 - 在职博士后 (2021.12-)<br>
+                导师：金耀辉教授
+            </li>
+            <li>
+                <strong>华东政法大学</strong> - 智能科学与信息法学系 - 讲师、司法鉴定人 (2021.8-2025.1)<br>
+                所教课程：数字电子技术基础、计算机组成原理、大数据与人工智能导论。
+            </li>
+        </ul>
 
-        <!-- 页脚 -->
-        <footer style="margin-top: 40px; text-align: center; color: #666;">
-            <p>© 2024 曹永胜 | 最后更新：2024年6月</p>
-        </footer>
+        <!-- 成果详情 -->
+        <h2>成果详情</h2>
+
+        <!-- 发表论文 -->
+        <h3>发表论文</h3>
+        <ol>
+            <li>
+                Yongsheng Cao, Demin Li, Yihong Zhang, Qinghua Tang, Amin Khodaei, Hongliang Zhang, Zhu Han,
+                <em>Optimal Energy Management for Multi-microgrid under A Transactive Energy Framework with Distributionally Robust Optimization,</em>
+                IEEE Transactions on Smart Grid, vol. 13, no. 1, pp. 599-612, Jan. 2022. (SCI一区top, ESI 高被引论文)
+            </li>
+            <!-- 其他论文省略，格式类似 -->
+        </ol>
+
+        <!-- 专著 -->
+        <h3>专著</h3>
+        <ul>
+            <li>
+                刘洋, 施卫华, 曹永胜 主编, 《大学计算机应用基础实践教程》, 清华大学出版社, 2023.3.1, ISBN：9787302624356.
+            </li>
+            <!-- 其他专著省略，格式类似 -->
+        </ul>
+
+        <!-- 软著 -->
+        <h3>软著</h3>
+        <ul>
+            <li>
+                衣俊霖, 李时韬, 梅闪星, 周一帆, 曹永胜, 赫广平, 温明慧, 分布式数据服务注册管理系统，登记号2024SR0295566.
+            </li>
+            <!-- 其他软著省略，格式类似 -->
+        </ul>
+
+        <!-- 国家标准 -->
+        <h3>国家标准</h3>
+        <ul>
+            <li>
+                参与《FYB/T 51302—2024司法业务协同数据技术规范》标准的制定
+            </li>
+        </ul>
+
+        <!-- 授权国家发明专利 -->
+        <h3>授权国家发明专利</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>专利名称</th>
+                    <th>专利号</th>
+                    <th>授权时间</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>一种电子数据取证监督机器人</td>
+                    <td>CN202210060829.5</td>
+                    <td>2024-06-25</td>
+                </tr>
+                <!-- 其他专利省略，格式类似 -->
+            </tbody>
+        </table>
+
+        <!-- 科研项目 -->
+        <h2>科研项目</h2>
+        <ul>
+            <li>
+                上海市2022年度“科技创新行动计划”启明星培育（扬帆专项）项目(22YF1411900)：基于机器学习与区块链的智能网联电动汽车能量调度与电子取证研究；2022.4-2025.3；20万；主持。
+            </li>
+            <!-- 其他科研项目省略，格式类似 -->
+        </ul>
+
+        <!-- 社会兼职 -->
+        <h2>社会兼职</h2>
+        <ul>
+            <li>IEEE Transaction on Smart Grid, IEEE Transactions on Industrial Informatics, IEEE Internet of Things Journal 等期刊审稿人</li>
+            <li>全国大学生信息安全竞赛专家</li>
+            <li>华东政法大学刑事法学院AI创新虚拟实验室负责人</li>
+        </ul>
+
+        <!-- 奖项荣誉 -->
+        <h2>奖项荣誉</h2>
+        <ul>
+            <li>2024年蓝桥杯全国软件和信息技术专业人才大赛上海赛区C/C++程序设计大学B组优秀指导老师</li>
+            <li>2023年TI杯全国大学生电子设计竞赛上海赛区优秀指导老师奖</li>
+            <!-- 其他奖项省略，格式类似 -->
+        </ul>
     </div>
 </body>
 </html>
