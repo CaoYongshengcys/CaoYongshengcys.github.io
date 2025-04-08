@@ -7,63 +7,20 @@
     <style>
         /* 全局样式 */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #004e92, #0077b6); /* 科技感渐变背景 */
-            color: #fff; /* 白色文字 */
+            background: #0f2027; /* 深色背景 */
+            color: #ffffff; /* 全局字体颜色 */
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             overflow: auto;
         }
 
-        .container {
-            max-width: 800px;
-            background: rgba(255, 255, 255, 0.9); /* 半透明白色背景 */
-            padding: 20px;
-            border-radius: 16px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            overflow: hidden;
-        }
-
-        h1, h2, h3 {
-            color: #004e92; /* 深蓝色标题 */
-            font-weight: bold;
-        }
-
-        
-     /* 解决长文本换行问题 */
-p, ul, table {
-    word-break: break-word; /* 自动换行 */
-    overflow-wrap: break-word; /* 长单词自动换行 */
-    white-space: normal; /* 确保正常换行行为 */
-}
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-
-        table, th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-            color: #333;
-        }
-
-        /* 动态效果：背景模糊 */
+        /* 背景动画 */
         body::before {
             content: '';
             position: fixed;
@@ -71,9 +28,118 @@ p, ul, table {
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('https://source.unsplash.com/random/1600x900/?technology') center/cover no-repeat;
-            filter: blur(10px);
-            z-index: -1;
+            background: linear-gradient(135deg, #004e92, #0077b6, #0f2027);
+            background-size: 400% 400%;
+            animation: GradientBackground 15s ease infinite;
+            z-index: -2;
+        }
+
+        /* 背景动画效果 */
+        @keyframes GradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* 半透明背景框 */
+        .container {
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.1); /* 半透明背景 */
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px); /* 背景模糊 */
+            overflow: hidden;
+        }
+
+        /* 标题样式 */
+        h1, h2, h3 {
+            color: #00e6e6; /* 浅蓝色标题 */
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #00e6e6;
+            padding-bottom: 5px;
+        }
+
+        /* 文本样式 */
+        p, ul, ol {
+            color: #ffffff;
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #00e6e6;
+        }
+
+        /* 列表样式 */
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        ul li, ol li {
+            margin-bottom: 10px;
+        }
+
+        /* 表格样式 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #00e6e6;
+            padding: 8px;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        th {
+            background-color: rgba(0, 230, 230, 0.2);
+        }
+
+        td {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        /* 鼠标悬停效果 */
+        th:hover, td:hover {
+            background-color: rgba(0, 230, 230, 0.3);
+            transition: background-color 0.2s;
+        }
+
+        /* 滚动条样式 */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #00e6e6;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #004e92;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            table, th, td {
+                font-size: 14px;
+            }
+
+            h1, h2, h3 {
+                font-size: 18px;
+            }
         }
     </style>
 </head>
@@ -86,47 +152,28 @@ p, ul, table {
         <p>就职院校：上海电机学院</p>
         <p>学历：博士研究生</p>
         <p>研究方向：低碳能源交通耦合网优化调度</p>
-        <p>邮箱：yongshengcao@sjtu.edu.cn</p>
+        <p>邮箱：<a href="mailto:yongshengcao@sjtu.edu.cn">yongshengcao@sjtu.edu.cn</a></p>
        
         <!-- 教育背景 -->
         <h2>教育背景</h2>
         <ul>
-            <li>
-                <strong>东华大学</strong> - 控制科学与工程 - 博士 <br>
-                导师：李德敏教授
-            </li>
-            <li>
-                <strong>休斯顿大学</strong> - 电子和计算机工程 - 联培博士 (2019.9-2020.10)<br>
-                导师：韩竹教授（IEEE Fellow）
-            </li>
-            <li>
-                <strong>东华大学</strong> - 信息与通信工程 - 硕士
-            </li>
-            <li>
-                <strong>东华大学</strong> - 电子信息工程 - 本科
-            </li>
+            <li><strong>东华大学</strong> - 控制科学与工程 - 博士</li>
+            <li><strong>休斯顿大学</strong> - 电子和计算机工程 - 联培博士 (2019.9-2020.10)</li>
+            <li><strong>东华大学</strong> - 信息与通信工程 - 硕士</li>
+            <li><strong>东华大学</strong> - 电子信息工程 - 本科</li>
         </ul>
 
         <!-- 工作经历 -->
         <h2>工作经历</h2>
         <ul>
-            <li>
-                <strong>上海电机学院</strong> - 电子信息工程学院 - 特聘副研究员 (2025.2-)
-            </li>
-            <li>
-                <strong>上海交通大学</strong> - 电子信息与电气工程学院 - 在职博士后 (2021.12-)<br>
-                导师：金耀辉教授
-            </li>
-            <li>
-                <strong>华东政法大学</strong> - 智能科学与信息法学系 - 讲师、司法鉴定人 (2021.8-2025.1)<br>
-                所教课程：数字电子技术基础、计算机组成原理、大数据与人工智能导论。
-            </li>
+            <li><strong>上海电机学院</strong> - 电子信息工程学院 - 特聘副研究员 (2025.2-)</li>
+            <li><strong>上海交通大学</strong> - 电子信息与电气工程学院 - 在职博士后 (2021.12-)</li>
+            <li><strong>华东政法大学</strong> - 智能科学与信息法学系 - 讲师、司法鉴定人 (2021.8-2025.1)</li>
         </ul>
 
         <!-- 成果详情 -->
         <h2>成果详情</h2>
-
-        <!-- 发表论文 -->
+       <!-- 发表论文 -->
         <h3>发表论文</h3>
         <ol>
             <!-- 论文 1 -->
