@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yongsheng Cao's Resume</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #004e92, #0077b6); /* 科技感渐变背景 */
+            color: #fff; /* 白色文字 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: auto;
+        }
+        .container {
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.9); /* 半透明白色背景 */
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        h1, h2, h3 {
+            color: #004e92; /* 深蓝色标题 */
+            font-weight: bold;
+        }
+        p, ul, table {
+            color: #333; /* 深灰色正文 */
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        /* 动态效果：背景模糊 */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://source.unsplash.com/random/1600x900/?technology') center/cover no-repeat;
+            filter: blur(10px);
+            z-index: -1;
+        }
+        /* 分隔线 */
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #ddd;
+            margin: 20px 0;
+        }
+        /* 响应式设计 */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px; /* 减小内边距 */
+            }
+            h1, h2, h3 {
+                font-size: 1.5em; /* 调整标题大小 */
+            }
+            p, ul, table {
+                font-size: 0.9em; /* 调整正文大小 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 导航栏 -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Chinese Version</a></li>
+                <li><a href="en-index.html">English Version</a></li>
+            </ul>
+        </nav>
 
+        <!-- Personal Information -->
+        <h1>Yongsheng Cao</h1>
+        <p>Graduate School: College of Information Science and Technology, Donghua University</p>
+        <p>Employer: Shanghai Dianji University</p>
+        <p>Degree: Doctoral Degree</p>
+        <p>Research Field: Optimization Dispatching of Low-Carbon Energy Transportation Coupling Network</p>
+        <p>Email: yongshengcao@sjtu.edu.cn</p>
+
+        <!-- Education Background, Work Experience, etc. -->
+        <!-- ... 省略部分内容 ... -->
+
+        <!-- 中文版链接 -->
+        <footer>
+            <p>Chinese version available at <a href="index.html">中文简历</a></p>
+        </footer>
+    </div>
+</body>
+</html>
