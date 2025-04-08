@@ -1,9 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>My GitHub Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>曹永胜 - 个人简历</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .section-title {
+            color: var(--primary-color);
+            border-left: 4px solid var(--primary-color);
+            padding-left: 10px;
+            margin: 25px 0;
+        }
+        .timeline-item {
+            margin: 20px 0;
+            padding-left: 20px;
+            border-left: 2px solid #ddd;
+        }
+        .publication-list li {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Page!</h1>
+    <div class="container">
+        <div class="header">
+            <h1>曹永胜</h1>
+            <p>博士/特聘副研究员 | 中共党员</p>
+            <div class="contact-info">
+                <p>📧 yongshengcao@sjtu.edu.cn | 📱 18018593292</p>
+                <p>🏫 华东政法大学智能科学与信息法学系 | 🔬 低碳能源交通耦合网优化调度</p>
+            </div>
+        </div>
+
+        <!-- 教育背景 -->
+        <h2 class="section-title">教育背景</h2>
+        <div class="timeline-item">
+            <h3>东华大学 - 控制科学与工程（博士）</h3>
+            <p>2017.3-2021.6 | 导师：李德敏教授</p>
+            <p>休斯顿大学联培博士（2019.9-2020.10）导师：韩竹教授（IEEE Fellow）</p>
+        </div>
+
+        <!-- 工作经历 -->
+        <h2 class="section-title">工作经历</h2>
+        <div class="timeline-item">
+            <h3>华东政法大学 - 讲师/司法鉴定人</h3>
+            <p>2021.8-2025.1 | 教授课程：数字电子技术基础、计算机组成原理</p>
+        </div>
+
+        <!-- 代表论文 -->
+        <h2 class="section-title">代表成果</h2>
+        <ul class="publication-list">
+            <li>【IEEE Trans Smart Grid】Optimal Energy Management for Multi-microgrid...（SCI一区，ESI高被引）</li>
+            <li>【IEEE IoT Journal】Joint Routing and Charging Optimization...（SCI一区）</li>
+            <li>【Sustainability】Smart Carbon Emission Scheduling...（SCI三区）</li>
+        </ul>
+
+        <!-- 科研项目 -->
+        <h2 class="section-title">科研项目</h2>
+        <div class="timeline-item">
+            <h3>上海市启明星培育项目（主持）</h3>
+            <p>2022.4-2025.3 | 基于机器学习的智能网联电动汽车能量调度研究</p>
+        </div>
+
+        <!-- 页脚 -->
+        <footer style="margin-top: 40px; text-align: center; color: #666;">
+            <p>© 2024 曹永胜 | 最后更新：2024年6月</p>
+        </footer>
+    </div>
 </body>
 </html>
