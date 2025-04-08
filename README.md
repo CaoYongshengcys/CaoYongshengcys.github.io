@@ -1,5 +1,5 @@
 # Caoyongsheng.github.io
-# Hi, I'm [Your Name]  
+# Hi, I'm Yongsheng Cao  
 - 🔭 Currently working on [Project]  
 - 🌱 Learning [Skill]  
-- 📫 How to reach me: [Email/Social Media]  
+- 📫 How to reach me: [yongshengcao@sjtu.edu.cn]  
