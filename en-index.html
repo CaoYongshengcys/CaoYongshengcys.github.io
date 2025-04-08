@@ -15,44 +15,13 @@
             color: #fff; /* 白色文字 */
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
+            align-items: flex-start; /* 修复内容对齐问题 */
+            min-height: 100vh;
+            padding: 20px;
             overflow: auto;
         }
-        .container {
-            max-width: 800px;
-            background: rgba(255, 255, 255, 0.9); /* 半透明白色背景 */
-            padding: 20px;
-            border-radius: 16px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            overflow: hidden;
-        }
-        h1, h2, h3 {
-            color: #004e92; /* 深蓝色标题 */
-            font-weight: bold;
-        }
-        p, ul, table {
-            color: #333; /* 深灰色正文 */
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-            color: #333;
-        }
-        /* 动态效果：背景模糊 */
+
+        /* 背景模糊效果 */
         body::before {
             content: '';
             position: fixed;
@@ -61,9 +30,93 @@
             width: 100%;
             height: 100%;
             background: url('https://source.unsplash.com/random/1600x900/?technology') center/cover no-repeat;
-            filter: blur(10px);
+            filter: blur(8px);
             z-index: -1;
         }
+
+        /* 容器样式 */
+        .container {
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.9); /* 半透明白色背景 */
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        /* 标题样式 */
+        h1, h2, h3 {
+            color: #004e92; /* 深蓝色标题 */
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* 文本样式 */
+        p, ul, ol, table {
+            color: #333; /* 深灰色正文 */
+            margin-bottom: 20px;
+        }
+
+        /* 列表样式 */
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
+        /* 表格样式 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        td {
+            background-color: #fff;
+        }
+
+        /* 导航栏样式 */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #004e92;
+            font-weight: bold;
+            padding: 5px 10px;
+            background: #f0f0f0;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #004e92;
+            color: #fff;
+        }
+
         /* 分隔线 */
         hr {
             border: none;
@@ -71,17 +124,30 @@
             background-color: #ddd;
             margin: 20px 0;
         }
+
         /* 响应式设计 */
         @media (max-width: 600px) {
             .container {
-                padding: 10px; /* 减小内边距 */
+                padding: 15px;
             }
+
             h1, h2, h3 {
-                font-size: 1.5em; /* 调整标题大小 */
+                font-size: 1.5em;
             }
-            p, ul, table {
-                font-size: 0.9em; /* 调整正文大小 */
+
+            p, ul, ol, table {
+                font-size: 0.9em;
             }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        /* 平滑滚动效果 */
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
@@ -95,15 +161,15 @@
             </ul>
         </nav>
 
-        <!-- Personal Information -->
+        <!-- 个人信息 -->
         <h1>Yongsheng Cao</h1>
-        <p>Graduate School: College of Information Science and Technology, Donghua University</p>
-        <p>Employer: Shanghai Dianji University</p>
-        <p>Degree: Doctoral Degree</p>
-        <p>Research Field: Optimization Dispatching of Low-Carbon Energy Transportation Coupling Network</p>
-        <p>Email: yongshengcao@sjtu.edu.cn</p>
+        <p><strong>Graduate School:</strong> College of Information Science and Technology, Donghua University</p>
+        <p><strong>Employer:</strong> Shanghai Dianji University</p>
+        <p><strong>Degree:</strong> Doctoral Degree</p>
+        <p><strong>Research Field:</strong> Optimization Dispatching of Low-Carbon Energy Transportation Coupling Network</p>
+        <p><strong>Email:</strong> <a href="mailto:yongshengcao@sjtu.edu.cn">yongshengcao@sjtu.edu.cn</a></p>
 
-        <!-- Education -->
+        <!-- 教育背景 -->
         <h2>Education</h2>
         <ul>
             <li><strong>Donghua University</strong> – Control Science and Engineering – Ph.D.</li>
@@ -112,7 +178,7 @@
             <li><strong>Donghua University</strong> – Electronic Information Engineering – Bachelor's Degree</li>
         </ul>
 
-        <!-- Work Experience -->
+        <!-- 工作经历 -->
         <h2>Work Experience</h2>
         <ul>
             <li><strong>Shanghai Dianji University</strong> – School of Electronic Information Engineering – Associate Researcher (Feb. 2025–)</li>
@@ -120,7 +186,7 @@
             <li><strong>East China University of Political Science and Law</strong> – Dept. of Intelligent Science and Legal Informatics – Lecturer, Judicial Expert (Aug. 2021–Jan. 2025)</li>
         </ul>
 
-        <!-- Publications -->
+       <!-- Publications -->
         <h2>Publications</h2>
         <h3>Journal Papers</h3>
         <ol>
